@@ -4,7 +4,7 @@ import json
 from typing import Any
 
 from career_matcher_agentic.llm.groq_client import get_groq_client
-from career_matcher_agentic.mcp_host.mcp_bridge import McpBridge, ToolInfo
+from career_matcher_agentic.mcp_clients.mcp_bridge import McpBridge, ToolInfo
 
 _MODEL = "openai/gpt-oss-120b"
 _SEP = "__"

@@ -1,9 +1,15 @@
+import logging
 from abc import ABC, abstractmethod
 
 from career_matcher_agentic.mcp_servers.crawler.schemas import JobPosting
 
+logger = logging.getLogger(__name__)
+
 
 class BaseCrawler(ABC):
+    def __init__(self) -> None:
+        self.logger = logger.getChild(self.__class__.__name__)
+
     @abstractmethod
     def discover_job_links(self, listing_url: str, job_category: str) -> list[str]: ...
 
@@ -12,4 +18,11 @@ class BaseCrawler(ABC):
 
     def crawl(self, listing_url: str, job_category: str) -> list[JobPosting]:
         links = self.discover_job_links(listing_url, job_category)
-        return [p for link in links if (p := self.extract_job(link, job_category)) is not None]
+        self.logger.info("Discovered %d job link(s) on %s", len(links), listing_url)
+
+        postings = [p for link in links if (p := self.extract_job(link, job_category)) is not None]
+        failed = len(links) - len(postings)
+        if failed:
+            self.logger.warning("%d of %d link(s) failed to extract on %s", failed, len(links), listing_url)
+
+        return postings

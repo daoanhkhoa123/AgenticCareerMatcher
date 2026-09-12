@@ -24,20 +24,25 @@ class ItViecCrawler(BaseCrawler):
     def discover_job_links(self, listing_url: str, job_category: str) -> list[str]:
         links: list[str] = []
         url: str | None = listing_url
+        page = 0
 
-        for _ in range(CrawlerSettings.max_listing_pages):
+        for page in range(1, CrawlerSettings.max_listing_pages + 1):
             if not url:
                 break
             soup = BeautifulSoup(self._fetch_html(url), "html.parser")
 
+            page_links = 0
             for heading in soup.select("h3[data-search--job-selection-target='jobTitle']"):
                 anchor = heading.find("a", href=True)
                 if anchor:
                     links.append(_clean_url(anchor["href"]))
+                    page_links += 1
+            self.logger.info("Page %d of %s: found %d link(s)", page, listing_url, page_links)
 
             next_link = soup.select_one("a[rel='next']")
             url = _absolute_url(next_link["href"]) if next_link and next_link.get("href") else None
 
+        self.logger.info("Discovered %d link(s) across %d page(s) starting at %s", len(links), page, listing_url)
         return links
 
     def extract_job(self, job_url: str, job_category: str) -> JobPosting | None:
@@ -46,6 +51,7 @@ class ItViecCrawler(BaseCrawler):
         title_el = soup.select_one("h1")
         company_el = soup.select_one(".employer-name")
         if not title_el or not company_el:
+            self.logger.warning("Missing title/company on %s - skipping (page layout changed?)", job_url)
             return None
 
         tech_stack: list[str] = []

@@ -18,7 +18,9 @@ class GenericFirecrawlCrawler(BaseCrawler):
         firecrawl = get_firecrawl_client()
         result = firecrawl.map(listing_url, search=job_category)
         links = _get(result, "links") or []
-        return [url for link in links if (url := _get(link, "url"))]
+        urls = [url for link in links if (url := _get(link, "url"))]
+        self.logger.info("firecrawl.map found %d link(s) on %s", len(urls), listing_url)
+        return urls
 
     def extract_job(self, job_url: str, job_category: str) -> JobPosting | None:
         firecrawl = get_firecrawl_client()
@@ -38,9 +40,11 @@ class GenericFirecrawlCrawler(BaseCrawler):
         )
         data = _get(result, "json")
         if not data:
+            self.logger.warning("No structured data extracted from %s (not a matching job posting?)", job_url)
             return None
 
         try:
             return JobPosting.model_validate({**data, "url": data.get("url") or job_url})
         except Exception:
+            self.logger.warning("Extracted data from %s did not match JobPosting schema", job_url, exc_info=True)
             return None

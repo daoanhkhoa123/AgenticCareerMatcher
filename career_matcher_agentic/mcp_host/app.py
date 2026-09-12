@@ -10,7 +10,7 @@ import streamlit as st
 
 from career_matcher_agentic.logging.pydantic_logger import setup_logging
 from career_matcher_agentic.mcp_host.llm import run_turn
-from career_matcher_agentic.mcp_host.mcp_bridge import McpBridge
+from career_matcher_agentic.mcp_clients.mcp_bridge import McpBridge
 
 setup_logging()
 

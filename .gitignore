@@ -12,3 +12,4 @@ wheels/
 # Local secrets/config
 .env
 .key
+app.log
