@@ -1,0 +1,2 @@
+include:
+  - third_party/postgre_sql/compose.job_db.yml

@@ -1,0 +1,23 @@
+services:
+  postgres:
+    image: postgres:17-alpine
+    container_name: job_db
+    restart: unless-stopped
+
+    environment:
+      POSTGRES_USER: admin123
+      POSTGRES_PASSWORD: admin123
+      POSTGRES_DB: job_db_postgre
+
+      # Force stable locale to avoid collation mismatch
+      LANG: C.UTF-8
+      LC_ALL: C.UTF-8
+
+    ports:
+      - "5438:5432"   # host access only
+
+    volumes:
+      - job_db_volume:/var/lib/postgresql/data
+
+volumes:
+  job_db_volume:
