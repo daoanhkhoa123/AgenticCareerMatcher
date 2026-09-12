@@ -7,7 +7,7 @@ _ENV_FILE_ENCODING = "utf-8"
 
 
 class _KeyConfig(BaseSettings):
-    groq_api_key: str
+    jina_key: str
 
     model_config = SettingsConfigDict(
         env_file=_ENV_FILE,

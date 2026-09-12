@@ -6,7 +6,7 @@ client side of the MCP protocol by hand: connect, `initialize`, `list_tools`,
 needing a full chat app in the loop.
 
 This is a different thing from `mcp_host/`: `mcp_host` is a real **host** — it
-embeds an LLM (Gemini) that *decides* which tool to call based on a chat
+embeds an LLM (Groq) that *decides* which tool to call based on a chat
 message. This package skips that decision entirely and just calls a specific
 tool with hardcoded arguments, so you can see exactly what a client does
 without also reasoning about model behavior.
@@ -29,7 +29,10 @@ uv run python career_matcher_agentic/mcp_clients/career_matcher_client.py
 - **Only talks to one server** (`career-matcher-mcp`), and only calls one
   tool with fixed arguments. It's a demonstration script, not a general
   MCP debugging tool — extend it (or copy the pattern into a new script) if
-  you want to poke at `job-crawler-mcp` or a different tool the same way.
+  you want to poke at `job-crawler-mcp`, `embedding-matcher-mcp`, or a
+  different tool the same way. The project now has three MCP servers total
+  (`mcp_host/mcp_bridge.py` connects to all of them); this client only ever
+  demonstrates one at a time.
 - **The tool call's arguments are hardcoded**, not user input — this is
   intentionally the simplest possible example of `list_tools` + `call_tool`,
   not a reusable CLI.

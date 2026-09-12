@@ -1,1 +1,39 @@
-Generic single-database configuration.
+# `alembic`
+
+Schema migrations for the shared `jobs` table (see
+`career_matcher_agentic/db/README.md` for the schema itself). This is plain
+Alembic, wired directly to the app's own models and database instead of the
+generic scaffold `alembic init` generates:
+
+- `env.py` imports `Base` and `Job` from `career_matcher_agentic.db` and sets
+  `target_metadata = Base.metadata`, so `--autogenerate` diffs against the
+  real SQLAlchemy models, not a hand-maintained schema description.
+- `env.py` also imports `DATABASE_URL` from `career_matcher_agentic.db.session`
+  and overrides `sqlalchemy.url` with it at runtime — migrations always run
+  against the exact same database the app itself connects to, rather than
+  whatever placeholder is in `alembic.ini`.
+
+## Migrations so far (`versions/`)
+
+1. **`55a1ddb40723_create_jobs_table.py`** — the initial `jobs` table.
+2. **`13f7bae29325_enable_pgvector_extension.py`** — enables Postgres's
+   `vector` extension, required before a `vector` column can exist.
+3. **`d57378dd9f17_add_embedding_column_to_jobs.py`** — adds the `embedding`
+   column (a `pgvector` `Vector`, sized from `EmbedderSettings`) for
+   semantic CV-to-job matching.
+4. **`7d071ddae861_add_embedding_model_column_to_jobs.py`** — adds
+   `embedding_model`, recording which embedding model produced a row's
+   vector so a future model/dimension change is detectable per-row.
+
+## Commands
+
+```bash
+# generate a new migration by diffing Base.metadata against the live DB
+uv run alembic revision --autogenerate -m "describe the change"
+
+# apply all pending migrations
+uv run alembic upgrade head
+
+# roll back one migration
+uv run alembic downgrade -1
+```

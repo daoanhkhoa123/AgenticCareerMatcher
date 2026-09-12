@@ -22,6 +22,9 @@ _SERVERS: dict[str, StdioServerParameters] = {
     "job-crawler": StdioServerParameters(
         command="uv", args=["run", "job-crawler-mcp"], cwd=str(_PROJECT_ROOT)
     ),
+    "embedding-matcher": StdioServerParameters(
+        command="uv", args=["run", "embedding-matcher-mcp"], cwd=str(_PROJECT_ROOT)
+    ),
 }
 
 

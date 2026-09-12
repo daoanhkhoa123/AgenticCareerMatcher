@@ -1,9 +1,11 @@
 from datetime import datetime
 
+from pgvector.sqlalchemy import Vector
 from sqlalchemy import ARRAY, Boolean, DateTime, String, Text, func
 from sqlalchemy.orm import Mapped, mapped_column
 
 from career_matcher_agentic.db.base import Base
+from career_matcher_agentic.embedder.settings import EmbedderSettings
 
 
 class Job(Base):
@@ -18,6 +20,10 @@ class Job(Base):
     url: Mapped[str] = mapped_column(String(2048), nullable=False, unique=True)
     requirements: Mapped[str | None] = mapped_column(Text)
     tech_stack: Mapped[list[str]] = mapped_column(ARRAY(String), nullable=False, default=list)
+    embedding: Mapped[list[float] | None] = mapped_column(
+        Vector(EmbedderSettings.embedding_dimensions), nullable=True
+    )
+    embedding_model: Mapped[str | None] = mapped_column(String(255), nullable=True)
     created_at: Mapped[datetime] = mapped_column(DateTime(timezone=True), server_default=func.now())
     updated_at: Mapped[datetime] = mapped_column(
         DateTime(timezone=True), server_default=func.now(), onupdate=func.now()

@@ -8,11 +8,14 @@ dependencies = [
     "alembic>=1.20.0",
     "beautifulsoup4>=4.15.0",
     "firecrawl-py>=4.42.0",
-    "google-genai>=2.23.0",
+    "groq>=1.7.0",
     "mcp>=2.2.0",
+    "pgvector>=0.5.0",
     "psycopg-binary>=3.3.5",
     "psycopg[binary]>=3.3.5",
     "pydantic-settings>=2.15.0",
+    "pypdf>=6.18.1",
+    "requests>=2.34.2",
     "sqlalchemy>=2.0.52",
     "streamlit>=1.63.0",
 ]
@@ -20,6 +23,7 @@ dependencies = [
 [project.scripts]
 career-matcher-mcp = "career_matcher_agentic.mcp_servers.career_matcher.server:main"
 job-crawler-mcp = "career_matcher_agentic.mcp_servers.crawler.server:main"
+embedding-matcher-mcp = "career_matcher_agentic.mcp_servers.embedding_matcher.server:main"
 
 [build-system]
 requires = ["hatchling"]

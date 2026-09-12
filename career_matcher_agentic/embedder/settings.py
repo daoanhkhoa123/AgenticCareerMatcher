@@ -2,12 +2,14 @@ from pathlib import Path
 
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
-_ENV_FILE = Path(__file__).parent / ".key"
+_ENV_FILE = Path(__file__).parent / ".env"
 _ENV_FILE_ENCODING = "utf-8"
 
 
-class _KeyConfig(BaseSettings):
-    groq_api_key: str
+class _EmbedderSettings(BaseSettings):
+    jina_url: str = "https://api.jina.ai/v1/embeddings"
+    jina_timeout_seconds: int = 30
+    embedding_dimensions: int = 1024
 
     model_config = SettingsConfigDict(
         env_file=_ENV_FILE,
@@ -16,4 +18,4 @@ class _KeyConfig(BaseSettings):
     )
 
 
-KeyConfig = _KeyConfig()  # type: ignore
+EmbedderSettings = _EmbedderSettings()  # type: ignore

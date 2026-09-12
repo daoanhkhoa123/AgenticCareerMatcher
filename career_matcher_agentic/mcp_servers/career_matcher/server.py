@@ -1,7 +1,7 @@
 from mcp.server import MCPServer
 
+from career_matcher_agentic.cv_parsing import parse_cv
 from career_matcher_agentic.logging.pydantic_logger import setup_logging
-from career_matcher_agentic.mcp_servers.career_matcher.cv_parsing import parse_cv
 from career_matcher_agentic.mcp_servers.career_matcher.matching import match_jobs
 
 mcp = MCPServer("career-matcher")

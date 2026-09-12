@@ -2,10 +2,13 @@ import logging
 
 from career_matcher_agentic.db.models import Job
 from career_matcher_agentic.db.session import get_session
+from career_matcher_agentic.embedder.jina_embedder import JinaEmbedder
 from career_matcher_agentic.mcp_servers.crawler.registry import get_crawler
 from career_matcher_agentic.mcp_servers.crawler.schemas import JobPosting
 
 logger = logging.getLogger(__name__)
+
+_embedder = JinaEmbedder()
 
 
 def run_crawler(target_url: str, job_category: str) -> dict:
@@ -27,11 +30,21 @@ def run_crawler(target_url: str, job_category: str) -> dict:
     }
 
 
+def _build_embedding_text(posting: JobPosting) -> str:
+    return f"{posting.title}\n{posting.company}\n{posting.requirements}\n{', '.join(posting.tech_stack)}"
+
+
 def _persist(postings: list[JobPosting], job_category: str) -> tuple[int, int]:
     saved = 0
     updated = 0
+
+    embeddings: list[list[float]] = []
+    if postings:
+        texts = [_build_embedding_text(posting) for posting in postings]
+        embeddings = _embedder.embed(texts, task="retrieval.passage")
+
     with get_session() as session:
-        for posting in postings:
+        for posting, embedding in zip(postings, embeddings):
             job = session.query(Job).filter_by(url=posting.url).first()
             if job is None:
                 job = Job(url=posting.url)
@@ -47,5 +60,7 @@ def _persist(postings: list[JobPosting], job_category: str) -> tuple[int, int]:
             job.remote = posting.remote
             job.requirements = posting.requirements
             job.tech_stack = posting.tech_stack
+            job.embedding = embedding
+            job.embedding_model = _embedder.model
 
     return saved, updated
