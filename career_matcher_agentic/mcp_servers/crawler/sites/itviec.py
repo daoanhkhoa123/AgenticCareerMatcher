@@ -9,7 +9,13 @@ from career_matcher_agentic.mcp_servers.crawler.schemas import JobPosting
 from career_matcher_agentic.mcp_servers.crawler.settings import CrawlerSettings
 
 
-@register("itviec.com")
+@register(
+    "itviec.com",
+    description=(
+        "ITviec — Vietnam's IT job board. Listing pages look like "
+        "https://itviec.com/it-jobs/<category-tag>, e.g. https://itviec.com/it-jobs/ai."
+    ),
+)
 class ItViecCrawler(BaseCrawler):
     """CSS-selector-based crawler for itviec.com (https://itviec.com/it-jobs/<tag>),
     whose listing/detail pages have a stable, known structure that doesn't need

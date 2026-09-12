@@ -1,12 +1,15 @@
 """Streamlit chat UI acting as a custom MCP host.
 
-Run with: uv run streamlit run career_matcher_agentic/host/app.py
+Run with: uv run streamlit run career_matcher_agentic/mcp_host/app.py
 """
 
 import streamlit as st
 
-from career_matcher_agentic.host.llm import run_turn
-from career_matcher_agentic.host.mcp_bridge import McpBridge
+from career_matcher_agentic.logging.pydantic_logger import setup_logging
+from career_matcher_agentic.mcp_host.llm import run_turn
+from career_matcher_agentic.mcp_host.mcp_bridge import McpBridge
+
+setup_logging()
 
 st.set_page_config(page_title="Career Matcher", page_icon="🧭")
 st.title("Career Matcher")

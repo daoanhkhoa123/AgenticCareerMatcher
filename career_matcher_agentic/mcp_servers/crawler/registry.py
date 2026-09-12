@@ -1,14 +1,22 @@
+from dataclasses import dataclass
 from urllib.parse import urlparse
 
 from career_matcher_agentic.mcp_servers.crawler.base import BaseCrawler
 from career_matcher_agentic.mcp_servers.crawler.generic import GenericFirecrawlCrawler
 
-_REGISTRY: dict[str, type[BaseCrawler]] = {}
+
+@dataclass
+class RegisteredSite:
+    crawler_cls: type[BaseCrawler]
+    description: str
 
 
-def register(domain: str):
+_REGISTRY: dict[str, RegisteredSite] = {}
+
+
+def register(domain: str, description: str):
     def decorator(cls: type[BaseCrawler]) -> type[BaseCrawler]:
-        _REGISTRY[domain] = cls
+        _REGISTRY[domain] = RegisteredSite(crawler_cls=cls, description=description)
         return cls
 
     return decorator
@@ -16,8 +24,13 @@ def register(domain: str):
 
 def get_crawler(url: str) -> BaseCrawler:
     domain = urlparse(url).netloc.lower()
-    crawler_cls = _REGISTRY.get(domain, GenericFirecrawlCrawler)
+    site = _REGISTRY.get(domain)
+    crawler_cls = site.crawler_cls if site else GenericFirecrawlCrawler
     return crawler_cls()
+
+
+def list_supported_sites() -> list[dict]:
+    return [{"domain": domain, "description": site.description} for domain, site in _REGISTRY.items()]
 
 
 # Imported last so each site module's @register(...) runs against the names

@@ -4,7 +4,15 @@ from pathlib import Path
 
 _LOG_FILE = Path(__file__).parent.parent.parent / "app.log"
 
+_configured = False
+
+
 def setup_logging():
+    global _configured
+    if _configured:
+        return
+    _configured = True
+
     formatter = logging.Formatter(
         "%(asctime)s | %(levelname)-8s | %(name)s | %(message)s"
     )
@@ -16,7 +24,7 @@ def setup_logging():
     file = RotatingFileHandler(
         _LOG_FILE, maxBytes=10_000_000, backupCount=5
     )
-    file.setLevel(logging.WARNING)
+    file.setLevel(logging.INFO)
     file.setFormatter(formatter)
 
     root = logging.getLogger()
