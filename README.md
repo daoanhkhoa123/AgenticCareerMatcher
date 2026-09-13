@@ -48,13 +48,14 @@ Jobs returned once crawling is done:
 
 ![Jobs returned after crawling](docs/ai_returning_jobs_after_finishing_crawling.png)
 
-Keyword matching against a PDF CV (RAG fallback):
-
-![RAG falling back to keyword matching on a PDF CV](docs/ai_run_rag_fall_back_to_keyword_pdf_cv.png)
 
 Embedding-based semantic matching against a PDF CV:
 
 ![Embedding RAG on a PDF CV](docs/ai_run_embedding_rag_on_pdf_cv.png)
+
+RAG fallback to keyword matching against a PDF CV after forcefully deleting all vectors from the vector store:
+
+![RAG falling back to keyword matching on a PDF CV](docs/ai_run_rag_fall_back_to_keyword_pdf_cv.png)
 
 ## Running it
 
