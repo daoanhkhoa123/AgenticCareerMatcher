@@ -34,6 +34,28 @@ or extracted from a CV — against real postings.
 
 Each subpackage has its own README with implementation details.
 
+## Screenshots
+
+No jobs in DB yet, so the assistant offers to crawl a predefined site:
+
+![No jobs in DB, asking to crawl](docs/ai_found_no_jobs_in_db_and_asking_if_wanted_to_crawl_predefined_website.png)
+
+Database status after crawling finishes:
+
+![Database status after crawling](docs/ai_showing_database_status_after_crawling.png)
+
+Jobs returned once crawling is done:
+
+![Jobs returned after crawling](docs/ai_returning_jobs_after_finishing_crawling.png)
+
+Keyword matching against a PDF CV (RAG fallback):
+
+![RAG falling back to keyword matching on a PDF CV](docs/ai_run_rag_fall_back_to_keyword_pdf_cv.png)
+
+Embedding-based semantic matching against a PDF CV:
+
+![Embedding RAG on a PDF CV](docs/ai_run_embedding_rag_on_pdf_cv.png)
+
 ## Running it
 
 ```bash

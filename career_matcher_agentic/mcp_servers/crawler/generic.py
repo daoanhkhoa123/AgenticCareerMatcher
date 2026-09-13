@@ -1,7 +1,7 @@
 from typing import Any
 
 from career_matcher_agentic.mcp_servers.crawler.base import BaseCrawler
-from career_matcher_agentic.mcp_servers.crawler.firecrawl_client import get_firecrawl_client
+from career_matcher_agentic.mcp_servers.crawler.firecrawl_client import call_with_retry, get_firecrawl_client
 from career_matcher_agentic.mcp_servers.crawler.schemas import JobPosting
 
 
@@ -16,7 +16,7 @@ class GenericFirecrawlCrawler(BaseCrawler):
 
     def discover_job_links(self, listing_url: str, job_category: str) -> list[str]:
         firecrawl = get_firecrawl_client()
-        result = firecrawl.map(listing_url, search=job_category)
+        result = call_with_retry(firecrawl.map, listing_url, search=job_category)
         links = _get(result, "links") or []
         urls = [url for link in links if (url := _get(link, "url"))]
         self.logger.info("firecrawl.map found %d link(s) on %s", len(urls), listing_url)
@@ -24,7 +24,8 @@ class GenericFirecrawlCrawler(BaseCrawler):
 
     def extract_job(self, job_url: str, job_category: str) -> JobPosting | None:
         firecrawl = get_firecrawl_client()
-        result = firecrawl.scrape(
+        result = call_with_retry(
+            firecrawl.scrape,
             job_url,
             formats=[
                 {

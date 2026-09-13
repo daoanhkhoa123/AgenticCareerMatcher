@@ -3,7 +3,7 @@ from urllib.parse import urlsplit, urlunsplit
 from bs4 import BeautifulSoup
 
 from career_matcher_agentic.mcp_servers.crawler.base import BaseCrawler
-from career_matcher_agentic.mcp_servers.crawler.firecrawl_client import get_firecrawl_client
+from career_matcher_agentic.mcp_servers.crawler.firecrawl_client import call_with_retry, get_firecrawl_client
 from career_matcher_agentic.mcp_servers.crawler.registry import register
 from career_matcher_agentic.mcp_servers.crawler.schemas import JobPosting
 from career_matcher_agentic.mcp_servers.crawler.settings import CrawlerSettings
@@ -88,7 +88,7 @@ class ItViecCrawler(BaseCrawler):
     @staticmethod
     def _fetch_html(url: str) -> str:
         firecrawl = get_firecrawl_client()
-        result = firecrawl.scrape(url, formats=["html"])
+        result = call_with_retry(firecrawl.scrape, url, formats=["html"])
         if isinstance(result, dict):
             return result.get("html") or ""
         return getattr(result, "html", None) or ""

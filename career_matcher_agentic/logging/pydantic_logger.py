@@ -42,3 +42,6 @@ def setup_logging():
     logging.getLogger("openai").setLevel(logging.INFO)
     logging.getLogger("httpx").setLevel(logging.WARNING)
     logging.getLogger("httpcore").setLevel(logging.WARNING)
+
+    # groq (chat completion request/response dumps drown out tool-call logs)
+    logging.getLogger("groq").setLevel(logging.WARNING)

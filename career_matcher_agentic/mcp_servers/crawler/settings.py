@@ -8,6 +8,9 @@ _ENV_FILE_ENCODING = "utf-8"
 
 class _CrawlerSettings(BaseSettings):
     max_listing_pages: int = 3
+    max_jobs_per_crawl: int = 10
+    max_retries: int = 3
+    retry_base_delay_seconds: float = 2.0
 
     model_config = SettingsConfigDict(
         env_file=_ENV_FILE,

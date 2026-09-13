@@ -1,10 +1,13 @@
 """Bridges MCP tool listings into Groq's OpenAI-compatible function-calling loop."""
 
 import json
+import logging
 from typing import Any
 
 from career_matcher_agentic.llm.groq_client import get_groq_client
 from career_matcher_agentic.mcp_clients.mcp_bridge import McpBridge, ToolInfo
+
+logger = logging.getLogger(__name__)
 
 _MODEL = "openai/gpt-oss-120b"
 _SEP = "__"
@@ -101,6 +104,7 @@ def run_turn(
             else:
                 result = bridge.call_tool(tool.server, tool.name, arguments)
 
+            logger.info("tool_call name=%s arguments=%s result=%s", call.function.name, arguments, result)
             tool_calls_log.append({"tool": call.function.name, "arguments": arguments, "result": result})
 
             payload = result if isinstance(result, dict) else {"result": result}

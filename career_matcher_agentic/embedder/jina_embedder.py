@@ -5,12 +5,12 @@ import requests
 from career_matcher_agentic.embedder.key_config import KeyConfig
 from career_matcher_agentic.embedder.settings import EmbedderSettings
 
-JinaModel = Literal["jina-embeddings-v3"]
+JinaModel = Literal["jina-embeddings-v5-omni-small"]
 
 
 class JinaEmbedder:
     def __init__(
-        self, model: JinaModel = "jina-embeddings-v3", dimensions: int = EmbedderSettings.embedding_dimensions
+        self, model: JinaModel = "jina-embeddings-v5-omni-small", dimensions: int = EmbedderSettings.embedding_dimensions
     ) -> None:
         self._model = model
         self._dimensions = dimensions

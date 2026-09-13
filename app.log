@@ -259,3 +259,552 @@ mcp.server.mcpserver.exceptions.UnexpectedToolError: Error executing tool trigge
 2026-09-13 00:31:44,344 | INFO     | groq._base_client | Retrying request to /openai/v1/chat/completions in 20.000000 seconds
 2026-09-13 00:32:08,565 | INFO     | career_matcher_agentic.mcp_servers.career_matcher.matching | Matching 26 skill(s) against jobs (preferences='computer vision', limit=5)
 2026-09-13 00:32:08,573 | INFO     | career_matcher_agentic.mcp_servers.career_matcher.matching | Found 5 match(es) out of 20 job(s) in database
+2026-09-13 01:01:02,880 | INFO     | career_matcher_agentic.mcp_servers.career_matcher.matching | Matching 4 skill(s) against jobs (preferences=None, limit=3)
+2026-09-13 01:01:02,911 | INFO     | career_matcher_agentic.mcp_servers.career_matcher.matching | Found 3 match(es) out of 20 job(s) in database
+2026-09-13 01:01:05,652 | INFO     | career_matcher_agentic.mcp_servers.career_matcher.matching | Matching 3 skill(s) against jobs (preferences=None, limit=2)
+2026-09-13 01:01:05,667 | INFO     | career_matcher_agentic.mcp_servers.career_matcher.matching | Found 0 match(es) out of 20 job(s) in database
+2026-09-13 01:01:28,219 | INFO     | career_matcher_agentic.mcp_servers.career_matcher.matching | Matching 3 skill(s) against jobs (preferences='remote', limit=5)
+2026-09-13 01:01:28,239 | INFO     | career_matcher_agentic.mcp_servers.career_matcher.matching | Found 0 match(es) out of 20 job(s) in database
+2026-09-13 01:01:46,358 | INFO     | groq._base_client | Retrying request to /openai/v1/chat/completions in 16.000000 seconds
+2026-09-13 01:02:06,198 | INFO     | career_matcher_agentic.mcp_servers.embedding_matcher.matching | Matching CV profile (29 skill(s)) by embedding (preferences=None, limit=3)
+2026-09-13 01:02:08,154 | INFO     | career_matcher_agentic.mcp_servers.embedding_matcher.matching | Found 0 embedding match(es) out of 20 job(s) in database
+2026-09-13 01:02:32,237 | INFO     | career_matcher_agentic.mcp_servers.career_matcher.matching | Matching 27 skill(s) against jobs (preferences=None, limit=3)
+2026-09-13 01:02:32,240 | INFO     | career_matcher_agentic.mcp_servers.career_matcher.matching | Found 3 match(es) out of 20 job(s) in database
+2026-09-13 01:03:02,912 | INFO     | groq._base_client | Retrying request to /openai/v1/chat/completions in 16.000000 seconds
+2026-09-13 01:03:22,241 | INFO     | career_matcher_agentic.mcp_servers.career_matcher.matching | Matching 28 skill(s) against jobs (preferences=None, limit=5)
+2026-09-13 01:03:22,244 | INFO     | career_matcher_agentic.mcp_servers.career_matcher.matching | Found 5 match(es) out of 20 job(s) in database
+2026-09-13 01:04:03,139 | INFO     | career_matcher_agentic.mcp_servers.embedding_matcher.matching | Matching CV profile (28 skill(s)) by embedding (preferences=None, limit=3)
+2026-09-13 01:04:03,816 | INFO     | career_matcher_agentic.mcp_servers.embedding_matcher.matching | Found 0 embedding match(es) out of 20 job(s) in database
+2026-09-13 01:11:55,402 | INFO     | career_matcher_agentic.mcp_servers.career_matcher.matching | Matching 4 skill(s) against jobs (preferences=None, limit=3)
+2026-09-13 01:11:55,436 | INFO     | career_matcher_agentic.mcp_servers.career_matcher.matching | Found 3 match(es) out of 20 job(s) in database
+2026-09-13 01:11:57,669 | INFO     | career_matcher_agentic.mcp_servers.career_matcher.matching | Matching 3 skill(s) against jobs (preferences=None, limit=2)
+2026-09-13 01:11:57,689 | INFO     | career_matcher_agentic.mcp_servers.career_matcher.matching | Found 0 match(es) out of 20 job(s) in database
+2026-09-13 01:12:10,264 | INFO     | career_matcher_agentic.mcp_servers.career_matcher.matching | Matching 3 skill(s) against jobs (preferences='remote preferred', limit=5)
+2026-09-13 01:12:10,270 | INFO     | career_matcher_agentic.mcp_servers.career_matcher.matching | Found 0 match(es) out of 20 job(s) in database
+2026-09-13 01:12:49,008 | INFO     | groq._base_client | Retrying request to /openai/v1/chat/completions in 7.000000 seconds
+2026-09-13 01:12:59,234 | INFO     | career_matcher_agentic.mcp_servers.embedding_matcher.matching | Matching CV profile (27 skill(s)) by embedding (preferences=None, limit=3)
+2026-09-13 01:13:01,037 | INFO     | career_matcher_agentic.mcp_servers.embedding_matcher.matching | Found 0 embedding match(es) out of 20 job(s) in database
+2026-09-13 01:13:12,864 | INFO     | groq._base_client | Retrying request to /openai/v1/chat/completions in 7.000000 seconds
+2026-09-13 01:13:20,129 | INFO     | groq._base_client | Retrying request to /openai/v1/chat/completions in 8.000000 seconds
+2026-09-13 01:13:32,370 | INFO     | career_matcher_agentic.mcp_servers.career_matcher.matching | Matching 26 skill(s) against jobs (preferences=None, limit=3)
+2026-09-13 01:13:32,375 | INFO     | career_matcher_agentic.mcp_servers.career_matcher.matching | Found 3 match(es) out of 20 job(s) in database
+2026-09-13 01:14:04,871 | INFO     | groq._base_client | Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-09-13 01:14:14,592 | INFO     | career_matcher_agentic.mcp_servers.career_matcher.matching | Matching 27 skill(s) against jobs (preferences=None, limit=5)
+2026-09-13 01:14:14,596 | INFO     | career_matcher_agentic.mcp_servers.career_matcher.matching | Found 5 match(es) out of 20 job(s) in database
+2026-09-13 01:14:48,743 | INFO     | groq._base_client | Retrying request to /openai/v1/chat/completions in 17.000000 seconds
+2026-09-13 01:15:23,864 | INFO     | career_matcher_agentic.mcp_servers.career_matcher.matching | Matching 4 skill(s) against jobs (preferences=None, limit=3)
+2026-09-13 01:15:23,897 | INFO     | career_matcher_agentic.mcp_servers.career_matcher.matching | Found 3 match(es) out of 20 job(s) in database
+2026-09-13 01:15:26,696 | INFO     | career_matcher_agentic.mcp_servers.career_matcher.matching | Matching 3 skill(s) against jobs (preferences=None, limit=2)
+2026-09-13 01:15:26,702 | INFO     | career_matcher_agentic.mcp_servers.career_matcher.matching | Found 0 match(es) out of 20 job(s) in database
+2026-09-13 01:15:35,819 | INFO     | career_matcher_agentic.mcp_servers.career_matcher.matching | Matching 3 skill(s) against jobs (preferences='remote preferred', limit=5)
+2026-09-13 01:15:35,836 | INFO     | career_matcher_agentic.mcp_servers.career_matcher.matching | Found 0 match(es) out of 20 job(s) in database
+2026-09-13 01:20:50,861 | INFO     | career_matcher_agentic.mcp_servers.career_matcher.matching | Matching 4 skill(s) against jobs (preferences=None, limit=3)
+2026-09-13 01:20:50,894 | INFO     | career_matcher_agentic.mcp_servers.career_matcher.matching | Found 3 match(es) out of 20 job(s) in database
+2026-09-13 01:20:54,304 | INFO     | career_matcher_agentic.mcp_servers.career_matcher.matching | Matching 3 skill(s) against jobs (preferences=None, limit=2)
+2026-09-13 01:20:54,325 | INFO     | career_matcher_agentic.mcp_servers.career_matcher.matching | Found 0 match(es) out of 20 job(s) in database
+2026-09-13 01:20:58,040 | INFO     | career_matcher_agentic.mcp_servers.career_matcher.matching | Matching 3 skill(s) against jobs (preferences='Remote preferred', limit=5)
+2026-09-13 01:20:58,045 | INFO     | career_matcher_agentic.mcp_servers.career_matcher.matching | Found 0 match(es) out of 20 job(s) in database
+2026-09-13 01:21:10,075 | INFO     | career_matcher_agentic.mcp_servers.embedding_matcher.matching | Matching CV profile (29 skill(s)) by embedding (preferences=None, limit=3)
+2026-09-13 01:21:11,226 | INFO     | career_matcher_agentic.mcp_servers.embedding_matcher.matching | Found 0 embedding match(es) out of 20 job(s) in database
+2026-09-13 01:21:27,290 | INFO     | groq._base_client | Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-09-13 01:21:35,123 | INFO     | career_matcher_agentic.mcp_servers.career_matcher.matching | Matching 26 skill(s) against jobs (preferences=None, limit=3)
+2026-09-13 01:21:35,127 | INFO     | career_matcher_agentic.mcp_servers.career_matcher.matching | Found 3 match(es) out of 20 job(s) in database
+2026-09-13 01:22:12,188 | INFO     | groq._base_client | Retrying request to /openai/v1/chat/completions in 2.000000 seconds
+2026-09-13 01:22:18,788 | INFO     | career_matcher_agentic.mcp_servers.career_matcher.matching | Matching 27 skill(s) against jobs (preferences=None, limit=5)
+2026-09-13 01:22:18,807 | INFO     | career_matcher_agentic.mcp_servers.career_matcher.matching | Found 5 match(es) out of 20 job(s) in database
+2026-09-13 01:22:43,285 | INFO     | groq._base_client | Retrying request to /openai/v1/chat/completions in 5.000000 seconds
+2026-09-13 01:22:51,802 | INFO     | career_matcher_agentic.mcp_servers.embedding_matcher.matching | Matching CV profile (29 skill(s)) by embedding (preferences=None, limit=3)
+2026-09-13 01:22:52,771 | INFO     | career_matcher_agentic.mcp_servers.embedding_matcher.matching | Found 0 embedding match(es) out of 20 job(s) in database
+2026-09-13 01:23:13,101 | INFO     | career_matcher_agentic.mcp_servers.career_matcher.matching | Matching 29 skill(s) against jobs (preferences=None, limit=3)
+2026-09-13 01:23:13,109 | INFO     | career_matcher_agentic.mcp_servers.career_matcher.matching | Found 3 match(es) out of 20 job(s) in database
+2026-09-13 10:00:49,508 | INFO     | career_matcher_agentic.mcp_servers.embedding_matcher.matching | Matching CV profile (32 skill(s)) by embedding (preferences=None, limit=5)
+2026-09-13 10:00:52,221 | INFO     | career_matcher_agentic.mcp_servers.embedding_matcher.matching | Found 0 embedding match(es) out of 0 job(s) in database
+2026-09-13 10:01:38,269 | INFO     | career_matcher_agentic.mcp_servers.crawler.crawling | Crawling https://itviec.com/it-jobs/ai for category 'ai' using ItViecCrawler
+2026-09-13 10:01:47,432 | INFO     | career_matcher_agentic.mcp_servers.crawler.base.ItViecCrawler | Page 1 of https://itviec.com/it-jobs/ai: found 20 link(s)
+2026-09-13 10:01:47,441 | INFO     | career_matcher_agentic.mcp_servers.crawler.base.ItViecCrawler | Discovered 20 link(s) across 2 page(s) starting at https://itviec.com/it-jobs/ai
+2026-09-13 10:01:47,442 | INFO     | career_matcher_agentic.mcp_servers.crawler.base.ItViecCrawler | Discovered 20 job link(s) on https://itviec.com/it-jobs/ai
+2026-09-13 10:03:42,604 | ERROR    | mcp.server.mcpserver.server | Tool 'trigger_crawler' raised an unexpected exception
+Traceback (most recent call last):
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\mcp\server\mcpserver\tools\base.py", line 176, in run
+    result = await self.fn_metadata.call_fn(self.fn, self.is_async, validated, pass_directly)
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\mcp\server\mcpserver\utilities\func_metadata.py", line 164, in call_fn
+    return await anyio.to_thread.run_sync(functools.partial(fn, **kwargs))
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\anyio\to_thread.py", line 65, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\anyio\_backends\_asyncio.py", line 2706, in run_sync_in_worker_thread
+    return await future
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\anyio\_backends\_asyncio.py", line 1100, in run
+    result = context.run(func, *args)
+  File "D:\CareerMatcherAgentic\career_matcher_agentic\mcp_servers\crawler\server.py", line 27, in trigger_crawler
+    return run_crawler(target_url, job_category)
+  File "D:\CareerMatcherAgentic\career_matcher_agentic\mcp_servers\crawler\crawling.py", line 18, in run_crawler
+    postings = crawler.crawl(target_url, job_category)
+  File "D:\CareerMatcherAgentic\career_matcher_agentic\mcp_servers\crawler\base.py", line 23, in crawl
+    postings = [p for link in links if (p := self.extract_job(link, job_category)) is not None]
+  File "D:\CareerMatcherAgentic\career_matcher_agentic\mcp_servers\crawler\base.py", line 23, in <listcomp>
+    postings = [p for link in links if (p := self.extract_job(link, job_category)) is not None]
+  File "D:\CareerMatcherAgentic\career_matcher_agentic\mcp_servers\crawler\sites\itviec.py", line 49, in extract_job
+    soup = BeautifulSoup(self._fetch_html(job_url), "html.parser")
+  File "D:\CareerMatcherAgentic\career_matcher_agentic\mcp_servers\crawler\sites\itviec.py", line 91, in _fetch_html
+    result = firecrawl.scrape(url, formats=["html"])
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\firecrawl\v2\client.py", line 239, in scrape
+    return scrape_module.scrape(self.http_client, url, options, auto_resume=auto_resume)
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\firecrawl\v2\methods\scrape.py", line 80, in scrape
+    handle_response_error(response, "scrape")
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\firecrawl\v2\utils\error_handler.py", line 101, in handle_response_error
+    raise RateLimitError(message, response.status_code, response)
+firecrawl.v2.utils.error_handler.RateLimitError: Rate Limit Exceeded: Failed to scrape. Rate limit exceeded. Consumed (req/min): 11, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 2s, resets at Sun Sep 13 2026 03:03:44 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\mcp\server\mcpserver\server.py", line 433, in _handle_call_tool
+    return await self.call_tool(params.name, params.arguments or {}, context)
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\mcp\server\mcpserver\server.py", line 539, in call_tool
+    return await self._tool_manager.call_tool(name, arguments, context, convert_result=True)
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\mcp\server\mcpserver\tools\tool_manager.py", line 87, in call_tool
+    return await tool.run(arguments, context, convert_result=convert_result)
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\mcp\server\mcpserver\tools\base.py", line 210, in run
+    raise UnexpectedToolError(f"Error executing tool {self.name}") from exc
+mcp.server.mcpserver.exceptions.UnexpectedToolError: Error executing tool trigger_crawler
+2026-09-13 10:03:43,633 | INFO     | career_matcher_agentic.mcp_servers.crawler.crawling | Crawling https://itviec.com/it-jobs/ai for category 'ai' using ItViecCrawler
+2026-09-13 10:03:45,876 | INFO     | career_matcher_agentic.mcp_servers.crawler.base.ItViecCrawler | Page 1 of https://itviec.com/it-jobs/ai: found 20 link(s)
+2026-09-13 10:03:45,884 | INFO     | career_matcher_agentic.mcp_servers.crawler.base.ItViecCrawler | Discovered 20 link(s) across 2 page(s) starting at https://itviec.com/it-jobs/ai
+2026-09-13 10:03:45,885 | INFO     | career_matcher_agentic.mcp_servers.crawler.base.ItViecCrawler | Discovered 20 job link(s) on https://itviec.com/it-jobs/ai
+2026-09-13 10:04:05,222 | ERROR    | mcp.server.mcpserver.server | Tool 'trigger_crawler' raised an unexpected exception
+Traceback (most recent call last):
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\mcp\server\mcpserver\tools\base.py", line 176, in run
+    result = await self.fn_metadata.call_fn(self.fn, self.is_async, validated, pass_directly)
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\mcp\server\mcpserver\utilities\func_metadata.py", line 164, in call_fn
+    return await anyio.to_thread.run_sync(functools.partial(fn, **kwargs))
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\anyio\to_thread.py", line 65, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\anyio\_backends\_asyncio.py", line 2706, in run_sync_in_worker_thread
+    return await future
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\anyio\_backends\_asyncio.py", line 1100, in run
+    result = context.run(func, *args)
+  File "D:\CareerMatcherAgentic\career_matcher_agentic\mcp_servers\crawler\server.py", line 27, in trigger_crawler
+    return run_crawler(target_url, job_category)
+  File "D:\CareerMatcherAgentic\career_matcher_agentic\mcp_servers\crawler\crawling.py", line 18, in run_crawler
+    postings = crawler.crawl(target_url, job_category)
+  File "D:\CareerMatcherAgentic\career_matcher_agentic\mcp_servers\crawler\base.py", line 23, in crawl
+    postings = [p for link in links if (p := self.extract_job(link, job_category)) is not None]
+  File "D:\CareerMatcherAgentic\career_matcher_agentic\mcp_servers\crawler\base.py", line 23, in <listcomp>
+    postings = [p for link in links if (p := self.extract_job(link, job_category)) is not None]
+  File "D:\CareerMatcherAgentic\career_matcher_agentic\mcp_servers\crawler\sites\itviec.py", line 49, in extract_job
+    soup = BeautifulSoup(self._fetch_html(job_url), "html.parser")
+  File "D:\CareerMatcherAgentic\career_matcher_agentic\mcp_servers\crawler\sites\itviec.py", line 91, in _fetch_html
+    result = firecrawl.scrape(url, formats=["html"])
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\firecrawl\v2\client.py", line 239, in scrape
+    return scrape_module.scrape(self.http_client, url, options, auto_resume=auto_resume)
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\firecrawl\v2\methods\scrape.py", line 80, in scrape
+    handle_response_error(response, "scrape")
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\firecrawl\v2\utils\error_handler.py", line 101, in handle_response_error
+    raise RateLimitError(message, response.status_code, response)
+firecrawl.v2.utils.error_handler.RateLimitError: Rate Limit Exceeded: Failed to scrape. Rate limit exceeded. Consumed (req/min): 11, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 39s, resets at Sun Sep 13 2026 03:04:44 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\mcp\server\mcpserver\server.py", line 433, in _handle_call_tool
+    return await self.call_tool(params.name, params.arguments or {}, context)
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\mcp\server\mcpserver\server.py", line 539, in call_tool
+    return await self._tool_manager.call_tool(name, arguments, context, convert_result=True)
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\mcp\server\mcpserver\tools\tool_manager.py", line 87, in call_tool
+    return await tool.run(arguments, context, convert_result=convert_result)
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\mcp\server\mcpserver\tools\base.py", line 210, in run
+    raise UnexpectedToolError(f"Error executing tool {self.name}") from exc
+mcp.server.mcpserver.exceptions.UnexpectedToolError: Error executing tool trigger_crawler
+2026-09-13 10:04:06,555 | INFO     | career_matcher_agentic.mcp_servers.crawler.crawling | Crawling https://itviec.com/it-jobs/ai?page=1 for category 'ai' using ItViecCrawler
+2026-09-13 10:04:08,497 | ERROR    | mcp.server.mcpserver.server | Tool 'trigger_crawler' raised an unexpected exception
+Traceback (most recent call last):
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\mcp\server\mcpserver\tools\base.py", line 176, in run
+    result = await self.fn_metadata.call_fn(self.fn, self.is_async, validated, pass_directly)
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\mcp\server\mcpserver\utilities\func_metadata.py", line 164, in call_fn
+    return await anyio.to_thread.run_sync(functools.partial(fn, **kwargs))
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\anyio\to_thread.py", line 65, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\anyio\_backends\_asyncio.py", line 2706, in run_sync_in_worker_thread
+    return await future
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\anyio\_backends\_asyncio.py", line 1100, in run
+    result = context.run(func, *args)
+  File "D:\CareerMatcherAgentic\career_matcher_agentic\mcp_servers\crawler\server.py", line 27, in trigger_crawler
+    return run_crawler(target_url, job_category)
+  File "D:\CareerMatcherAgentic\career_matcher_agentic\mcp_servers\crawler\crawling.py", line 18, in run_crawler
+    postings = crawler.crawl(target_url, job_category)
+  File "D:\CareerMatcherAgentic\career_matcher_agentic\mcp_servers\crawler\base.py", line 20, in crawl
+    links = self.discover_job_links(listing_url, job_category)
+  File "D:\CareerMatcherAgentic\career_matcher_agentic\mcp_servers\crawler\sites\itviec.py", line 32, in discover_job_links
+    soup = BeautifulSoup(self._fetch_html(url), "html.parser")
+  File "D:\CareerMatcherAgentic\career_matcher_agentic\mcp_servers\crawler\sites\itviec.py", line 91, in _fetch_html
+    result = firecrawl.scrape(url, formats=["html"])
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\firecrawl\v2\client.py", line 239, in scrape
+    return scrape_module.scrape(self.http_client, url, options, auto_resume=auto_resume)
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\firecrawl\v2\methods\scrape.py", line 80, in scrape
+    handle_response_error(response, "scrape")
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\firecrawl\v2\utils\error_handler.py", line 101, in handle_response_error
+    raise RateLimitError(message, response.status_code, response)
+firecrawl.v2.utils.error_handler.RateLimitError: Rate Limit Exceeded: Failed to scrape. Rate limit exceeded. Consumed (req/min): 12, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 36s, resets at Sun Sep 13 2026 03:04:44 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\mcp\server\mcpserver\server.py", line 433, in _handle_call_tool
+    return await self.call_tool(params.name, params.arguments or {}, context)
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\mcp\server\mcpserver\server.py", line 539, in call_tool
+    return await self._tool_manager.call_tool(name, arguments, context, convert_result=True)
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\mcp\server\mcpserver\tools\tool_manager.py", line 87, in call_tool
+    return await tool.run(arguments, context, convert_result=convert_result)
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\mcp\server\mcpserver\tools\base.py", line 210, in run
+    raise UnexpectedToolError(f"Error executing tool {self.name}") from exc
+mcp.server.mcpserver.exceptions.UnexpectedToolError: Error executing tool trigger_crawler
+2026-09-13 10:04:09,298 | INFO     | career_matcher_agentic.mcp_servers.crawler.crawling | Crawling https://itviec.com for category 'ai' using ItViecCrawler
+2026-09-13 10:04:10,182 | ERROR    | mcp.server.mcpserver.server | Tool 'trigger_crawler' raised an unexpected exception
+Traceback (most recent call last):
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\mcp\server\mcpserver\tools\base.py", line 176, in run
+    result = await self.fn_metadata.call_fn(self.fn, self.is_async, validated, pass_directly)
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\mcp\server\mcpserver\utilities\func_metadata.py", line 164, in call_fn
+    return await anyio.to_thread.run_sync(functools.partial(fn, **kwargs))
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\anyio\to_thread.py", line 65, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\anyio\_backends\_asyncio.py", line 2706, in run_sync_in_worker_thread
+    return await future
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\anyio\_backends\_asyncio.py", line 1100, in run
+    result = context.run(func, *args)
+  File "D:\CareerMatcherAgentic\career_matcher_agentic\mcp_servers\crawler\server.py", line 27, in trigger_crawler
+    return run_crawler(target_url, job_category)
+  File "D:\CareerMatcherAgentic\career_matcher_agentic\mcp_servers\crawler\crawling.py", line 18, in run_crawler
+    postings = crawler.crawl(target_url, job_category)
+  File "D:\CareerMatcherAgentic\career_matcher_agentic\mcp_servers\crawler\base.py", line 20, in crawl
+    links = self.discover_job_links(listing_url, job_category)
+  File "D:\CareerMatcherAgentic\career_matcher_agentic\mcp_servers\crawler\sites\itviec.py", line 32, in discover_job_links
+    soup = BeautifulSoup(self._fetch_html(url), "html.parser")
+  File "D:\CareerMatcherAgentic\career_matcher_agentic\mcp_servers\crawler\sites\itviec.py", line 91, in _fetch_html
+    result = firecrawl.scrape(url, formats=["html"])
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\firecrawl\v2\client.py", line 239, in scrape
+    return scrape_module.scrape(self.http_client, url, options, auto_resume=auto_resume)
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\firecrawl\v2\methods\scrape.py", line 80, in scrape
+    handle_response_error(response, "scrape")
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\firecrawl\v2\utils\error_handler.py", line 101, in handle_response_error
+    raise RateLimitError(message, response.status_code, response)
+firecrawl.v2.utils.error_handler.RateLimitError: Rate Limit Exceeded: Failed to scrape. Rate limit exceeded. Consumed (req/min): 13, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 34s, resets at Sun Sep 13 2026 03:04:44 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\mcp\server\mcpserver\server.py", line 433, in _handle_call_tool
+    return await self.call_tool(params.name, params.arguments or {}, context)
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\mcp\server\mcpserver\server.py", line 539, in call_tool
+    return await self._tool_manager.call_tool(name, arguments, context, convert_result=True)
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\mcp\server\mcpserver\tools\tool_manager.py", line 87, in call_tool
+    return await tool.run(arguments, context, convert_result=convert_result)
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\mcp\server\mcpserver\tools\base.py", line 210, in run
+    raise UnexpectedToolError(f"Error executing tool {self.name}") from exc
+mcp.server.mcpserver.exceptions.UnexpectedToolError: Error executing tool trigger_crawler
+2026-09-13 10:11:36,642 | INFO     | career_matcher_agentic.mcp_servers.embedding_matcher.matching | Matching CV profile (31 skill(s)) by embedding (preferences=None, limit=5)
+2026-09-13 10:11:38,289 | INFO     | career_matcher_agentic.mcp_servers.embedding_matcher.matching | Found 0 embedding match(es) out of 0 job(s) in database
+2026-09-13 10:11:38,294 | INFO     | career_matcher_agentic.mcp_host.llm | tool_call name=embedding_matcher__match_jobs_from_cv_embedding arguments={'file_path': 'C:\\Users\\THINKPAD\\AppData\\Local\\Temp\\career_matcher_cv_sf9rirkd\\Dao Anh Khoa.pdf', 'limit': 5, 'preferences': None} result={'matches': [], 'total_jobs_in_db': 0, 'last_crawled_at': None, 'note': "No matches found. The database only has 0 job(s) and hasn't been crawled at all. Consider crawling more listings before trusting this result."}
+2026-09-13 10:11:39,115 | INFO     | career_matcher_agentic.mcp_host.llm | tool_call name=job_crawler__list_supported_sites arguments={} result={'domain': 'itviec.com', 'description': "ITviec — Vietnam's IT job board. Listing pages look like https://itviec.com/it-jobs/<category-tag>, e.g. https://itviec.com/it-jobs/ai."}
+2026-09-13 10:12:25,396 | INFO     | career_matcher_agentic.mcp_servers.crawler.crawling | Crawling https://itviec.com/it-jobs/ai for category 'ai' using ItViecCrawler
+2026-09-13 10:12:28,853 | INFO     | career_matcher_agentic.mcp_servers.crawler.base.ItViecCrawler | Page 1 of https://itviec.com/it-jobs/ai: found 20 link(s)
+2026-09-13 10:12:28,861 | INFO     | career_matcher_agentic.mcp_servers.crawler.base.ItViecCrawler | Discovered 20 link(s) across 2 page(s) starting at https://itviec.com/it-jobs/ai
+2026-09-13 10:12:28,861 | INFO     | career_matcher_agentic.mcp_servers.crawler.base.ItViecCrawler | Discovered 20 job link(s) on https://itviec.com/it-jobs/ai
+2026-09-13 10:12:48,351 | ERROR    | mcp.server.mcpserver.server | Tool 'trigger_crawler' raised an unexpected exception
+Traceback (most recent call last):
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\mcp\server\mcpserver\tools\base.py", line 176, in run
+    result = await self.fn_metadata.call_fn(self.fn, self.is_async, validated, pass_directly)
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\mcp\server\mcpserver\utilities\func_metadata.py", line 164, in call_fn
+    return await anyio.to_thread.run_sync(functools.partial(fn, **kwargs))
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\anyio\to_thread.py", line 65, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\anyio\_backends\_asyncio.py", line 2706, in run_sync_in_worker_thread
+    return await future
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\anyio\_backends\_asyncio.py", line 1100, in run
+    result = context.run(func, *args)
+  File "D:\CareerMatcherAgentic\career_matcher_agentic\mcp_servers\crawler\server.py", line 27, in trigger_crawler
+    return run_crawler(target_url, job_category)
+  File "D:\CareerMatcherAgentic\career_matcher_agentic\mcp_servers\crawler\crawling.py", line 18, in run_crawler
+    postings = crawler.crawl(target_url, job_category)
+  File "D:\CareerMatcherAgentic\career_matcher_agentic\mcp_servers\crawler\base.py", line 23, in crawl
+    postings = [p for link in links if (p := self.extract_job(link, job_category)) is not None]
+  File "D:\CareerMatcherAgentic\career_matcher_agentic\mcp_servers\crawler\base.py", line 23, in <listcomp>
+    postings = [p for link in links if (p := self.extract_job(link, job_category)) is not None]
+  File "D:\CareerMatcherAgentic\career_matcher_agentic\mcp_servers\crawler\sites\itviec.py", line 49, in extract_job
+    soup = BeautifulSoup(self._fetch_html(job_url), "html.parser")
+  File "D:\CareerMatcherAgentic\career_matcher_agentic\mcp_servers\crawler\sites\itviec.py", line 91, in _fetch_html
+    result = firecrawl.scrape(url, formats=["html"])
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\firecrawl\v2\client.py", line 239, in scrape
+    return scrape_module.scrape(self.http_client, url, options, auto_resume=auto_resume)
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\firecrawl\v2\methods\scrape.py", line 80, in scrape
+    handle_response_error(response, "scrape")
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\firecrawl\v2\utils\error_handler.py", line 101, in handle_response_error
+    raise RateLimitError(message, response.status_code, response)
+firecrawl.v2.utils.error_handler.RateLimitError: Rate Limit Exceeded: Failed to scrape. Rate limit exceeded. Consumed (req/min): 11, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 39s, resets at Sun Sep 13 2026 03:13:27 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\mcp\server\mcpserver\server.py", line 433, in _handle_call_tool
+    return await self.call_tool(params.name, params.arguments or {}, context)
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\mcp\server\mcpserver\server.py", line 539, in call_tool
+    return await self._tool_manager.call_tool(name, arguments, context, convert_result=True)
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\mcp\server\mcpserver\tools\tool_manager.py", line 87, in call_tool
+    return await tool.run(arguments, context, convert_result=convert_result)
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\mcp\server\mcpserver\tools\base.py", line 210, in run
+    raise UnexpectedToolError(f"Error executing tool {self.name}") from exc
+mcp.server.mcpserver.exceptions.UnexpectedToolError: Error executing tool trigger_crawler
+2026-09-13 10:12:48,359 | INFO     | career_matcher_agentic.mcp_host.llm | tool_call name=job_crawler__trigger_crawler arguments={'job_category': 'ai', 'target_url': 'https://itviec.com/it-jobs/ai'} result=Error executing tool trigger_crawler
+2026-09-13 10:14:42,312 | INFO     | career_matcher_agentic.mcp_servers.crawler.crawling | Crawling https://itviec.com/it-jobs/ai for category 'ai' using ItViecCrawler
+2026-09-13 10:14:45,623 | INFO     | career_matcher_agentic.mcp_servers.crawler.base.ItViecCrawler | Page 1 of https://itviec.com/it-jobs/ai: found 20 link(s)
+2026-09-13 10:14:45,630 | INFO     | career_matcher_agentic.mcp_servers.crawler.base.ItViecCrawler | Discovered 20 link(s) across 2 page(s) starting at https://itviec.com/it-jobs/ai
+2026-09-13 10:14:45,631 | INFO     | career_matcher_agentic.mcp_servers.crawler.base.ItViecCrawler | Discovered 20 job link(s) on https://itviec.com/it-jobs/ai
+2026-09-13 10:15:04,708 | ERROR    | mcp.server.mcpserver.server | Tool 'trigger_crawler' raised an unexpected exception
+Traceback (most recent call last):
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\mcp\server\mcpserver\tools\base.py", line 176, in run
+    result = await self.fn_metadata.call_fn(self.fn, self.is_async, validated, pass_directly)
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\mcp\server\mcpserver\utilities\func_metadata.py", line 164, in call_fn
+    return await anyio.to_thread.run_sync(functools.partial(fn, **kwargs))
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\anyio\to_thread.py", line 65, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\anyio\_backends\_asyncio.py", line 2706, in run_sync_in_worker_thread
+    return await future
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\anyio\_backends\_asyncio.py", line 1100, in run
+    result = context.run(func, *args)
+  File "D:\CareerMatcherAgentic\career_matcher_agentic\mcp_servers\crawler\server.py", line 27, in trigger_crawler
+    return run_crawler(target_url, job_category)
+  File "D:\CareerMatcherAgentic\career_matcher_agentic\mcp_servers\crawler\crawling.py", line 18, in run_crawler
+    postings = crawler.crawl(target_url, job_category)
+  File "D:\CareerMatcherAgentic\career_matcher_agentic\mcp_servers\crawler\base.py", line 23, in crawl
+    postings = [p for link in links if (p := self.extract_job(link, job_category)) is not None]
+  File "D:\CareerMatcherAgentic\career_matcher_agentic\mcp_servers\crawler\base.py", line 23, in <listcomp>
+    postings = [p for link in links if (p := self.extract_job(link, job_category)) is not None]
+  File "D:\CareerMatcherAgentic\career_matcher_agentic\mcp_servers\crawler\sites\itviec.py", line 49, in extract_job
+    soup = BeautifulSoup(self._fetch_html(job_url), "html.parser")
+  File "D:\CareerMatcherAgentic\career_matcher_agentic\mcp_servers\crawler\sites\itviec.py", line 91, in _fetch_html
+    result = firecrawl.scrape(url, formats=["html"])
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\firecrawl\v2\client.py", line 239, in scrape
+    return scrape_module.scrape(self.http_client, url, options, auto_resume=auto_resume)
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\firecrawl\v2\methods\scrape.py", line 80, in scrape
+    handle_response_error(response, "scrape")
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\firecrawl\v2\utils\error_handler.py", line 101, in handle_response_error
+    raise RateLimitError(message, response.status_code, response)
+firecrawl.v2.utils.error_handler.RateLimitError: Rate Limit Exceeded: Failed to scrape. Rate limit exceeded. Consumed (req/min): 11, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 40s, resets at Sun Sep 13 2026 03:15:44 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\mcp\server\mcpserver\server.py", line 433, in _handle_call_tool
+    return await self.call_tool(params.name, params.arguments or {}, context)
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\mcp\server\mcpserver\server.py", line 539, in call_tool
+    return await self._tool_manager.call_tool(name, arguments, context, convert_result=True)
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\mcp\server\mcpserver\tools\tool_manager.py", line 87, in call_tool
+    return await tool.run(arguments, context, convert_result=convert_result)
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\mcp\server\mcpserver\tools\base.py", line 210, in run
+    raise UnexpectedToolError(f"Error executing tool {self.name}") from exc
+mcp.server.mcpserver.exceptions.UnexpectedToolError: Error executing tool trigger_crawler
+2026-09-13 10:15:04,711 | INFO     | career_matcher_agentic.mcp_host.llm | tool_call name=job_crawler__trigger_crawler arguments={'job_category': 'ai', 'target_url': 'https://itviec.com/it-jobs/ai'} result=Error executing tool trigger_crawler
+2026-09-13 10:24:33,191 | INFO     | career_matcher_agentic.mcp_servers.embedding_matcher.matching | Matching CV profile (32 skill(s)) by embedding (preferences=None, limit=5)
+2026-09-13 10:24:34,959 | INFO     | career_matcher_agentic.mcp_servers.embedding_matcher.matching | Found 0 embedding match(es) out of 0 job(s) in database
+2026-09-13 10:24:34,964 | INFO     | career_matcher_agentic.mcp_host.llm | tool_call name=embedding_matcher__match_jobs_from_cv_embedding arguments={'file_path': 'C:\\Users\\THINKPAD\\AppData\\Local\\Temp\\career_matcher_cv_va7z2fgb\\Dao Anh Khoa.pdf', 'limit': 5, 'preferences': None} result={'matches': [], 'total_jobs_in_db': 0, 'last_crawled_at': None, 'note': "No matches found. The database only has 0 job(s) and hasn't been crawled at all. Consider crawling more listings before trusting this result."}
+2026-09-13 10:24:35,855 | INFO     | career_matcher_agentic.mcp_host.llm | tool_call name=job_crawler__list_supported_sites arguments={} result={'domain': 'itviec.com', 'description': "ITviec — Vietnam's IT job board. Listing pages look like https://itviec.com/it-jobs/<category-tag>, e.g. https://itviec.com/it-jobs/ai."}
+2026-09-13 10:29:06,881 | INFO     | career_matcher_agentic.mcp_servers.crawler.crawling | Crawling https://itviec.com/it-jobs/ai for category 'ai' using ItViecCrawler
+2026-09-13 10:29:10,303 | INFO     | career_matcher_agentic.mcp_servers.crawler.base.ItViecCrawler | Page 1 of https://itviec.com/it-jobs/ai: found 20 link(s)
+2026-09-13 10:29:10,311 | INFO     | career_matcher_agentic.mcp_servers.crawler.base.ItViecCrawler | Discovered 20 link(s) across 2 page(s) starting at https://itviec.com/it-jobs/ai
+2026-09-13 10:29:10,311 | INFO     | career_matcher_agentic.mcp_servers.crawler.base.ItViecCrawler | Discovered 20 job link(s) on https://itviec.com/it-jobs/ai
+2026-09-13 10:29:10,312 | INFO     | career_matcher_agentic.mcp_servers.crawler.base.ItViecCrawler | Capping crawl at 10 of 20 discovered link(s)
+2026-09-13 10:29:30,886 | ERROR    | mcp.server.mcpserver.server | Tool 'trigger_crawler' raised an unexpected exception
+Traceback (most recent call last):
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\mcp\server\mcpserver\tools\base.py", line 176, in run
+    result = await self.fn_metadata.call_fn(self.fn, self.is_async, validated, pass_directly)
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\mcp\server\mcpserver\utilities\func_metadata.py", line 164, in call_fn
+    return await anyio.to_thread.run_sync(functools.partial(fn, **kwargs))
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\anyio\to_thread.py", line 65, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\anyio\_backends\_asyncio.py", line 2706, in run_sync_in_worker_thread
+    return await future
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\anyio\_backends\_asyncio.py", line 1100, in run
+    result = context.run(func, *args)
+  File "D:\CareerMatcherAgentic\career_matcher_agentic\mcp_servers\crawler\server.py", line 27, in trigger_crawler
+    return run_crawler(target_url, job_category)
+  File "D:\CareerMatcherAgentic\career_matcher_agentic\mcp_servers\crawler\crawling.py", line 18, in run_crawler
+    postings = crawler.crawl(target_url, job_category)
+  File "D:\CareerMatcherAgentic\career_matcher_agentic\mcp_servers\crawler\base.py", line 29, in crawl
+    postings = [p for link in links if (p := self.extract_job(link, job_category)) is not None]
+  File "D:\CareerMatcherAgentic\career_matcher_agentic\mcp_servers\crawler\base.py", line 29, in <listcomp>
+    postings = [p for link in links if (p := self.extract_job(link, job_category)) is not None]
+  File "D:\CareerMatcherAgentic\career_matcher_agentic\mcp_servers\crawler\sites\itviec.py", line 49, in extract_job
+    soup = BeautifulSoup(self._fetch_html(job_url), "html.parser")
+  File "D:\CareerMatcherAgentic\career_matcher_agentic\mcp_servers\crawler\sites\itviec.py", line 91, in _fetch_html
+    result = firecrawl.scrape(url, formats=["html"])
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\firecrawl\v2\client.py", line 239, in scrape
+    return scrape_module.scrape(self.http_client, url, options, auto_resume=auto_resume)
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\firecrawl\v2\methods\scrape.py", line 80, in scrape
+    handle_response_error(response, "scrape")
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\firecrawl\v2\utils\error_handler.py", line 101, in handle_response_error
+    raise RateLimitError(message, response.status_code, response)
+firecrawl.v2.utils.error_handler.RateLimitError: Rate Limit Exceeded: Failed to scrape. Rate limit exceeded. Consumed (req/min): 11, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 38s, resets at Sun Sep 13 2026 03:30:09 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\mcp\server\mcpserver\server.py", line 433, in _handle_call_tool
+    return await self.call_tool(params.name, params.arguments or {}, context)
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\mcp\server\mcpserver\server.py", line 539, in call_tool
+    return await self._tool_manager.call_tool(name, arguments, context, convert_result=True)
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\mcp\server\mcpserver\tools\tool_manager.py", line 87, in call_tool
+    return await tool.run(arguments, context, convert_result=convert_result)
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\mcp\server\mcpserver\tools\base.py", line 210, in run
+    raise UnexpectedToolError(f"Error executing tool {self.name}") from exc
+mcp.server.mcpserver.exceptions.UnexpectedToolError: Error executing tool trigger_crawler
+2026-09-13 10:29:30,893 | INFO     | career_matcher_agentic.mcp_host.llm | tool_call name=job_crawler__trigger_crawler arguments={'job_category': 'ai', 'target_url': 'https://itviec.com/it-jobs/ai'} result=Error executing tool trigger_crawler
+2026-09-13 10:29:31,961 | INFO     | career_matcher_agentic.mcp_servers.crawler.crawling | Crawling https://itviec.com/it-jobs/ai/ for category 'ai' using ItViecCrawler
+2026-09-13 10:29:32,795 | ERROR    | mcp.server.mcpserver.server | Tool 'trigger_crawler' raised an unexpected exception
+Traceback (most recent call last):
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\mcp\server\mcpserver\tools\base.py", line 176, in run
+    result = await self.fn_metadata.call_fn(self.fn, self.is_async, validated, pass_directly)
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\mcp\server\mcpserver\utilities\func_metadata.py", line 164, in call_fn
+    return await anyio.to_thread.run_sync(functools.partial(fn, **kwargs))
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\anyio\to_thread.py", line 65, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\anyio\_backends\_asyncio.py", line 2706, in run_sync_in_worker_thread
+    return await future
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\anyio\_backends\_asyncio.py", line 1100, in run
+    result = context.run(func, *args)
+  File "D:\CareerMatcherAgentic\career_matcher_agentic\mcp_servers\crawler\server.py", line 27, in trigger_crawler
+    return run_crawler(target_url, job_category)
+  File "D:\CareerMatcherAgentic\career_matcher_agentic\mcp_servers\crawler\crawling.py", line 18, in run_crawler
+    postings = crawler.crawl(target_url, job_category)
+  File "D:\CareerMatcherAgentic\career_matcher_agentic\mcp_servers\crawler\base.py", line 21, in crawl
+    links = self.discover_job_links(listing_url, job_category)
+  File "D:\CareerMatcherAgentic\career_matcher_agentic\mcp_servers\crawler\sites\itviec.py", line 32, in discover_job_links
+    soup = BeautifulSoup(self._fetch_html(url), "html.parser")
+  File "D:\CareerMatcherAgentic\career_matcher_agentic\mcp_servers\crawler\sites\itviec.py", line 91, in _fetch_html
+    result = firecrawl.scrape(url, formats=["html"])
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\firecrawl\v2\client.py", line 239, in scrape
+    return scrape_module.scrape(self.http_client, url, options, auto_resume=auto_resume)
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\firecrawl\v2\methods\scrape.py", line 80, in scrape
+    handle_response_error(response, "scrape")
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\firecrawl\v2\utils\error_handler.py", line 101, in handle_response_error
+    raise RateLimitError(message, response.status_code, response)
+firecrawl.v2.utils.error_handler.RateLimitError: Rate Limit Exceeded: Failed to scrape. Rate limit exceeded. Consumed (req/min): 12, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 36s, resets at Sun Sep 13 2026 03:30:09 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\mcp\server\mcpserver\server.py", line 433, in _handle_call_tool
+    return await self.call_tool(params.name, params.arguments or {}, context)
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\mcp\server\mcpserver\server.py", line 539, in call_tool
+    return await self._tool_manager.call_tool(name, arguments, context, convert_result=True)
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\mcp\server\mcpserver\tools\tool_manager.py", line 87, in call_tool
+    return await tool.run(arguments, context, convert_result=convert_result)
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\mcp\server\mcpserver\tools\base.py", line 210, in run
+    raise UnexpectedToolError(f"Error executing tool {self.name}") from exc
+mcp.server.mcpserver.exceptions.UnexpectedToolError: Error executing tool trigger_crawler
+2026-09-13 10:29:32,805 | INFO     | career_matcher_agentic.mcp_host.llm | tool_call name=job_crawler__trigger_crawler arguments={'job_category': 'ai', 'target_url': 'https://itviec.com/it-jobs/ai/'} result=Error executing tool trigger_crawler
+2026-09-13 10:29:33,610 | INFO     | career_matcher_agentic.mcp_host.llm | tool_call name=job_crawler__list_supported_sites arguments={} result={'domain': 'itviec.com', 'description': "ITviec — Vietnam's IT job board. Listing pages look like https://itviec.com/it-jobs/<category-tag>, e.g. https://itviec.com/it-jobs/ai."}
+2026-09-13 10:29:34,713 | INFO     | career_matcher_agentic.mcp_servers.crawler.crawling | Crawling https://itviec.com/it-jobs/ai for category 'ai' using ItViecCrawler
+2026-09-13 10:29:35,661 | ERROR    | mcp.server.mcpserver.server | Tool 'trigger_crawler' raised an unexpected exception
+Traceback (most recent call last):
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\mcp\server\mcpserver\tools\base.py", line 176, in run
+    result = await self.fn_metadata.call_fn(self.fn, self.is_async, validated, pass_directly)
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\mcp\server\mcpserver\utilities\func_metadata.py", line 164, in call_fn
+    return await anyio.to_thread.run_sync(functools.partial(fn, **kwargs))
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\anyio\to_thread.py", line 65, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\anyio\_backends\_asyncio.py", line 2706, in run_sync_in_worker_thread
+    return await future
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\anyio\_backends\_asyncio.py", line 1100, in run
+    result = context.run(func, *args)
+  File "D:\CareerMatcherAgentic\career_matcher_agentic\mcp_servers\crawler\server.py", line 27, in trigger_crawler
+    return run_crawler(target_url, job_category)
+  File "D:\CareerMatcherAgentic\career_matcher_agentic\mcp_servers\crawler\crawling.py", line 18, in run_crawler
+    postings = crawler.crawl(target_url, job_category)
+  File "D:\CareerMatcherAgentic\career_matcher_agentic\mcp_servers\crawler\base.py", line 21, in crawl
+    links = self.discover_job_links(listing_url, job_category)
+  File "D:\CareerMatcherAgentic\career_matcher_agentic\mcp_servers\crawler\sites\itviec.py", line 32, in discover_job_links
+    soup = BeautifulSoup(self._fetch_html(url), "html.parser")
+  File "D:\CareerMatcherAgentic\career_matcher_agentic\mcp_servers\crawler\sites\itviec.py", line 91, in _fetch_html
+    result = firecrawl.scrape(url, formats=["html"])
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\firecrawl\v2\client.py", line 239, in scrape
+    return scrape_module.scrape(self.http_client, url, options, auto_resume=auto_resume)
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\firecrawl\v2\methods\scrape.py", line 80, in scrape
+    handle_response_error(response, "scrape")
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\firecrawl\v2\utils\error_handler.py", line 101, in handle_response_error
+    raise RateLimitError(message, response.status_code, response)
+firecrawl.v2.utils.error_handler.RateLimitError: Rate Limit Exceeded: Failed to scrape. Rate limit exceeded. Consumed (req/min): 13, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 33s, resets at Sun Sep 13 2026 03:30:09 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\mcp\server\mcpserver\server.py", line 433, in _handle_call_tool
+    return await self.call_tool(params.name, params.arguments or {}, context)
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\mcp\server\mcpserver\server.py", line 539, in call_tool
+    return await self._tool_manager.call_tool(name, arguments, context, convert_result=True)
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\mcp\server\mcpserver\tools\tool_manager.py", line 87, in call_tool
+    return await tool.run(arguments, context, convert_result=convert_result)
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\mcp\server\mcpserver\tools\base.py", line 210, in run
+    raise UnexpectedToolError(f"Error executing tool {self.name}") from exc
+mcp.server.mcpserver.exceptions.UnexpectedToolError: Error executing tool trigger_crawler
+2026-09-13 10:29:35,667 | INFO     | career_matcher_agentic.mcp_host.llm | tool_call name=job_crawler__trigger_crawler arguments={'job_category': 'ai', 'target_url': 'https://itviec.com/it-jobs/ai'} result=Error executing tool trigger_crawler
+2026-09-13 10:29:43,012 | INFO     | career_matcher_agentic.mcp_servers.crawler.crawling | Crawling https://itviec.com/it-jobs/software-engineer for category 'software-engineer' using ItViecCrawler
+2026-09-13 10:29:44,994 | ERROR    | mcp.server.mcpserver.server | Tool 'trigger_crawler' raised an unexpected exception
+Traceback (most recent call last):
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\mcp\server\mcpserver\tools\base.py", line 176, in run
+    result = await self.fn_metadata.call_fn(self.fn, self.is_async, validated, pass_directly)
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\mcp\server\mcpserver\utilities\func_metadata.py", line 164, in call_fn
+    return await anyio.to_thread.run_sync(functools.partial(fn, **kwargs))
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\anyio\to_thread.py", line 65, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\anyio\_backends\_asyncio.py", line 2706, in run_sync_in_worker_thread
+    return await future
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\anyio\_backends\_asyncio.py", line 1100, in run
+    result = context.run(func, *args)
+  File "D:\CareerMatcherAgentic\career_matcher_agentic\mcp_servers\crawler\server.py", line 27, in trigger_crawler
+    return run_crawler(target_url, job_category)
+  File "D:\CareerMatcherAgentic\career_matcher_agentic\mcp_servers\crawler\crawling.py", line 18, in run_crawler
+    postings = crawler.crawl(target_url, job_category)
+  File "D:\CareerMatcherAgentic\career_matcher_agentic\mcp_servers\crawler\base.py", line 21, in crawl
+    links = self.discover_job_links(listing_url, job_category)
+  File "D:\CareerMatcherAgentic\career_matcher_agentic\mcp_servers\crawler\sites\itviec.py", line 32, in discover_job_links
+    soup = BeautifulSoup(self._fetch_html(url), "html.parser")
+  File "D:\CareerMatcherAgentic\career_matcher_agentic\mcp_servers\crawler\sites\itviec.py", line 91, in _fetch_html
+    result = firecrawl.scrape(url, formats=["html"])
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\firecrawl\v2\client.py", line 239, in scrape
+    return scrape_module.scrape(self.http_client, url, options, auto_resume=auto_resume)
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\firecrawl\v2\methods\scrape.py", line 80, in scrape
+    handle_response_error(response, "scrape")
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\firecrawl\v2\utils\error_handler.py", line 101, in handle_response_error
+    raise RateLimitError(message, response.status_code, response)
+firecrawl.v2.utils.error_handler.RateLimitError: Rate Limit Exceeded: Failed to scrape. Rate limit exceeded. Consumed (req/min): 14, Remaining (req/min): 0. Upgrade your plan at https://firecrawl.dev/pricing for increased rate limits or please retry after 24s, resets at Sun Sep 13 2026 03:30:09 GMT+0000 (Coordinated Universal Time) - No additional error details provided.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\mcp\server\mcpserver\server.py", line 433, in _handle_call_tool
+    return await self.call_tool(params.name, params.arguments or {}, context)
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\mcp\server\mcpserver\server.py", line 539, in call_tool
+    return await self._tool_manager.call_tool(name, arguments, context, convert_result=True)
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\mcp\server\mcpserver\tools\tool_manager.py", line 87, in call_tool
+    return await tool.run(arguments, context, convert_result=convert_result)
+  File "D:\CareerMatcherAgentic\.venv\lib\site-packages\mcp\server\mcpserver\tools\base.py", line 210, in run
+    raise UnexpectedToolError(f"Error executing tool {self.name}") from exc
+mcp.server.mcpserver.exceptions.UnexpectedToolError: Error executing tool trigger_crawler
+2026-09-13 10:29:44,997 | INFO     | career_matcher_agentic.mcp_host.llm | tool_call name=job_crawler__trigger_crawler arguments={'job_category': 'software-engineer', 'target_url': 'https://itviec.com/it-jobs/software-engineer'} result=Error executing tool trigger_crawler
+2026-09-13 10:36:54,609 | INFO     | career_matcher_agentic.mcp_servers.embedding_matcher.matching | Matching CV profile (33 skill(s)) by embedding (preferences=None, limit=5)
+2026-09-13 10:36:56,476 | INFO     | career_matcher_agentic.mcp_servers.embedding_matcher.matching | Found 0 embedding match(es) out of 0 job(s) in database
+2026-09-13 10:36:56,480 | INFO     | career_matcher_agentic.mcp_host.llm | tool_call name=embedding_matcher__match_jobs_from_cv_embedding arguments={'file_path': 'C:\\Users\\THINKPAD\\AppData\\Local\\Temp\\career_matcher_cv_lmnie_il\\Dao Anh Khoa.pdf', 'limit': 5, 'preferences': None} result={'matches': [], 'total_jobs_in_db': 0, 'last_crawled_at': None, 'note': "No matches found. The database only has 0 job(s) and hasn't been crawled at all. Consider crawling more listings before trusting this result."}
+2026-09-13 10:37:03,210 | INFO     | career_matcher_agentic.mcp_servers.career_matcher.matching | Matching 31 skill(s) against jobs (preferences=None, limit=5)
+2026-09-13 10:37:03,238 | INFO     | career_matcher_agentic.mcp_servers.career_matcher.matching | Found 0 match(es) out of 0 job(s) in database
+2026-09-13 10:37:03,241 | INFO     | career_matcher_agentic.mcp_host.llm | tool_call name=career_matcher__match_jobs_from_cv arguments={'file_path': 'C:\\Users\\THINKPAD\\AppData\\Local\\Temp\\career_matcher_cv_lmnie_il\\Dao Anh Khoa.pdf', 'limit': 5, 'preferences': None} result={'matches': [], 'total_jobs_in_db': 0, 'last_crawled_at': None, 'note': "No matches found. The database only has 0 job(s) and hasn't been crawled at all. Consider crawling more listings before trusting this result."}
+2026-09-13 10:37:28,507 | INFO     | career_matcher_agentic.mcp_host.llm | tool_call name=job_crawler__list_supported_sites arguments={} result={'domain': 'itviec.com', 'description': "ITviec — Vietnam's IT job board. Listing pages look like https://itviec.com/it-jobs/<category-tag>, e.g. https://itviec.com/it-jobs/ai."}
+2026-09-13 10:38:15,248 | INFO     | career_matcher_agentic.mcp_servers.crawler.crawling | Crawling https://itviec.com/it-jobs/ai for category 'ai engineer' using ItViecCrawler
+2026-09-13 10:38:18,617 | INFO     | career_matcher_agentic.mcp_servers.crawler.base.ItViecCrawler | Page 1 of https://itviec.com/it-jobs/ai: found 20 link(s)
+2026-09-13 10:38:18,625 | INFO     | career_matcher_agentic.mcp_servers.crawler.base.ItViecCrawler | Discovered 20 link(s) across 2 page(s) starting at https://itviec.com/it-jobs/ai
+2026-09-13 10:38:18,625 | INFO     | career_matcher_agentic.mcp_servers.crawler.base.ItViecCrawler | Discovered 20 job link(s) on https://itviec.com/it-jobs/ai
+2026-09-13 10:38:18,625 | INFO     | career_matcher_agentic.mcp_servers.crawler.base.ItViecCrawler | Capping crawl at 10 of 20 discovered link(s)
+2026-09-13 10:38:38,923 | WARNING  | career_matcher_agentic.mcp_servers.crawler.firecrawl_client | Firecrawl rate limit hit (attempt 1/3), retrying in 38.0s
+2026-09-13 10:39:19,939 | INFO     | career_matcher_agentic.mcp_servers.crawler.crawling | Extracted 10 job posting(s) from https://itviec.com/it-jobs/ai
+2026-09-13 10:39:21,326 | INFO     | career_matcher_agentic.mcp_servers.crawler.crawling | Persisted results: 10 saved, 0 updated
+2026-09-13 10:39:21,336 | INFO     | career_matcher_agentic.mcp_host.llm | tool_call name=job_crawler__trigger_crawler arguments={'job_category': 'ai engineer', 'target_url': 'https://itviec.com/it-jobs/ai'} result={'target_url': 'https://itviec.com/it-jobs/ai', 'job_category': 'ai engineer', 'jobs_found': 10, 'jobs_saved': 10, 'jobs_updated': 0}
+2026-09-13 10:39:25,666 | INFO     | career_matcher_agentic.mcp_servers.embedding_matcher.matching | Matching CV profile (31 skill(s)) by embedding (preferences='ai engineer', limit=5)
+2026-09-13 10:39:26,224 | INFO     | career_matcher_agentic.mcp_servers.embedding_matcher.matching | Found 5 embedding match(es) out of 10 job(s) in database

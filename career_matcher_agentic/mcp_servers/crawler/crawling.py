@@ -15,7 +15,15 @@ def run_crawler(target_url: str, job_category: str) -> dict:
     crawler = get_crawler(target_url)
     logger.info("Crawling %s for category '%s' using %s", target_url, job_category, type(crawler).__name__)
 
-    postings = crawler.crawl(target_url, job_category)
+    try:
+        postings = crawler.crawl(target_url, job_category)
+    except Exception as exc:
+        logger.exception("Crawl failed for %s", target_url)
+        return {
+            "target_url": target_url,
+            "job_category": job_category,
+            "error": f"{type(exc).__name__}: {exc}",
+        }
     logger.info("Extracted %d job posting(s) from %s", len(postings), target_url)
 
     saved, updated = _persist(postings, job_category)
